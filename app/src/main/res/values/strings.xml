@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">QxDaDian</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_btn">Main</string>
+    <string name="main_btn_tofrag">Main_Fagments</string>
+    <string name="main_btn_tofrag_manager">Main_Mananger</string>
+
+    <string name="second_btn">Second</string>
+    <string name="third_btn">Third</string>
+
+    <string name="frag_first">Frag_1</string>
+
+    <string name="frag_second">Frag_2</string>
+    <string name="frag_third">Frag_3</string>
+
+    <string name="frag_six">Frag_6</string>
+    <string name="frag_seven">Frag_7</string>
+    <string name="frag_change">Change_Frag</string>
+</resources>

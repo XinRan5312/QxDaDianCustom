@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/xinran/mygithub/QxDaDian/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0-alpha2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="df7f6513d6e2aaa302bbac654807c6129b517090">
+        <dex dex="/Users/xinran/mygithub/QxDaDian/app/build/intermediates/pre-dexed/debug/classes-1f887a6c4bfdde5e393154ed6ece3adfa2eaa4bd.jar" />
+    </item>
+    <item
+        jar="/Users/xinran/mygithub/QxDaDian/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0-alpha2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="32ab8bede8cd600f25a5bb3fe15068c81c8910dc">
+        <dex dex="/Users/xinran/mygithub/QxDaDian/app/build/intermediates/pre-dexed/debug/classes-820ac7112628dd32bafad7f9d6d56379ce3cd685.jar" />
+    </item>
+    <item
+        jar="/Users/xinran/mygithub/QxDaDian/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0-alpha2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="bf5aa3b026d5b5fd9f4ab5e8cf13499b9e016dfb">
+        <dex dex="/Users/xinran/mygithub/QxDaDian/app/build/intermediates/pre-dexed/debug/classes-e457c28ec8bd2176e91e91a8bd2cd32a45a278c5.jar" />
+    </item>
+    <item
+        jar="/Users/xinran/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/24.0.0-alpha2/support-annotations-24.0.0-alpha2.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="8071e1e6cd07e9253720313d6c14286a7ee424e0">
+        <dex dex="/Users/xinran/mygithub/QxDaDian/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0-alpha2-1464b9b097746c3f9e056a61e451231e09d3930e.jar" />
+    </item>
+    <item
+        jar="/Users/xinran/mygithub/QxDaDian/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0-alpha2/jars/libs/internal_impl-24.0.0-alpha2.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="e460bc069dfd21d22770cf2a2370c9021b9c98a2">
+        <dex dex="/Users/xinran/mygithub/QxDaDian/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0-alpha2-b2b290736bec193ac9a582cf596afe97137a3ede.jar" />
+    </item>
+    <item
+        jar="/Users/xinran/mygithub/QxDaDian/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0-alpha2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="661a632c3b434991d6364690cbe0f786371101cc">
+        <dex dex="/Users/xinran/mygithub/QxDaDian/app/build/intermediates/pre-dexed/debug/classes-807907b593cd469a9d7da0ce96fc6b0c4d4510f6.jar" />
+    </item>
+
+</items>
