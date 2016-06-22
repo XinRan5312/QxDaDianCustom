@@ -18,7 +18,7 @@ public class ThirdActivity extends QxBaseActivity {
         $(R.id.btn_third).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                qxStartActivity(new Intent(ThirdActivity.this, MainActivity.class));
+                startActivity(new Intent(ThirdActivity.this, MainActivity.class));
             }
         });
 

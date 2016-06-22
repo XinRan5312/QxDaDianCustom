@@ -19,19 +19,19 @@ public class MainActivity extends QxBaseActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                qxStartActivity(new Intent(MainActivity.this, SencondActivity.class));
+                startActivity(new Intent(MainActivity.this, SencondActivity.class));
             }
         });
         $(R.id.btn_main_tofragments).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                qxStartActivity(new Intent(MainActivity.this, FragmentsActivity.class));
+                startActivity(new Intent(MainActivity.this, FragmentsActivity.class));
             }
         });
         $(R.id.btn_main_tofragment_manager).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                qxStartActivity(new Intent(MainActivity.this, FragmentManagerActivity.class));
+                startActivity(new Intent(MainActivity.this, FragmentManagerActivity.class));
             }
         });
     }

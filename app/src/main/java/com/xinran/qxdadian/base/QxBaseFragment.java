@@ -53,7 +53,7 @@ public abstract class QxBaseFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-
+        Log.i(TAG, "fragment is onDestroyVie" + getClass().getSimpleName());
         savaPrePagerName(getClass().getSimpleName());
 
     }
@@ -65,6 +65,12 @@ public abstract class QxBaseFragment extends Fragment {
 //        mBundle.putString(EXTRA_FROM_ACTIVITY, getClass().getSimpleName());
         Log.i(TAG, "fragment is onDestroyVie" + getClass().getSimpleName());
         super.onDestroyView();
+    }
+
+    @Override
+    public void onHiddenChanged(boolean hidden) {
+        super.onHiddenChanged(hidden);
+        Log.i(TAG, "fragment is onHiddle" + getClass().getSimpleName());
     }
 
     @Override

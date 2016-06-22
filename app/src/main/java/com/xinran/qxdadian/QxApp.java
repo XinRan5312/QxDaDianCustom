@@ -7,6 +7,8 @@ import android.app.Application;
  */
 public class QxApp extends Application {
     public static String prePageName;
+    public static String preActivityName;
+
     @Override
     public void onCreate() {
         super.onCreate();

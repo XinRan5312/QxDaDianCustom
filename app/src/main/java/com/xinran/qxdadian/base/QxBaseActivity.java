@@ -52,26 +52,28 @@ public  class QxBaseActivity extends FragmentActivity {
     public String fromActivityName(){
         return mBundle.getString(EXTRA_FROM_ACTIVITY);
     }
-
-    public void qxStartActivity(Intent intent) {
+    @Override
+    public void startActivity(Intent intent) {
         intent.putExtra(EXTRA_FROM_ACTIVITY, getClass().getSimpleName());
-        startActivity(intent);
+//        QxApp.preActivityName=getClass().getSimpleName();
+        super.startActivity(intent);
     }
 
 
-    public void qxStartActivity(Class<? extends Activity> cls) {
-        qxStartActivity(cls, null);
+    public void startActivity(Class<? extends Activity> cls) {
+        startActivity(cls, null);
     }
 
     /* 打开新的Activity */
-    public void qxStartActivity(Class<? extends Activity> cls, Bundle bundle) {
+
+    public void startActivity(Class<? extends Activity> cls, Bundle bundle) {
         Intent intent = new Intent();
         if (bundle != null) {
             intent.putExtras(bundle);
         }
         intent.setClass(this, cls);
         intent.putExtra(EXTRA_FROM_ACTIVITY, getClass().getSimpleName());
-        startActivity(intent);
+        super.startActivity(intent);
     }
     @Override
     public void startActivityForResult(Intent intent, int requestCode) {

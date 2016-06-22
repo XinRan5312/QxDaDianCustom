@@ -6,9 +6,13 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.xinran.qxdadian.base.QxBaseActivity;
+import com.xinran.qxdadian.base.QxBaseFragmentPagerAdapter;
+import com.xinran.qxdadian.base.QxBaseFragmentStatePagerAdapter;
 import com.xinran.qxdadian.fragments.FirstFragmentForViewPager;
 import com.xinran.qxdadian.fragments.SencondFragmentForViewPager;
 import com.xinran.qxdadian.fragments.ThirdFragmentForViewPager;
@@ -30,8 +34,6 @@ public class FragmentsActivity extends QxBaseActivity {
         mViewPager = $(R.id.vp_fragments);
         List<Fragment> list = getFragments();
         mViewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager(), list));
-//        mViewPager.setCurrentItem(0);
-//设置缓存page的个数 2*n+1;
         mViewPager.setOffscreenPageLimit(0);
     }
 
@@ -44,12 +46,10 @@ public class FragmentsActivity extends QxBaseActivity {
         return list == null ? Collections.EMPTY_LIST : list;
     }
 
-    private static class ViewPagerAdapter extends FragmentStatePagerAdapter {
-        List<Fragment> list;
-//        private boolean isFirstVisible = true;
-//        private String mPrefragmentName = "";
-//        private boolean isFirstlog = true;
+    private static class ViewPagerAdapter extends QxBaseFragmentPagerAdapter {
 
+
+        List<Fragment> list;
 
         public ViewPagerAdapter(FragmentManager fm, List<Fragment> list) {
             super(fm);
@@ -58,30 +58,33 @@ public class FragmentsActivity extends QxBaseActivity {
 
         @Override
         public Fragment getItem(int i) {
-//            int pre=i==0?list.size()-1:i-1;
-//            int next=i==list.size()-1?0:i+1;
-//            if (isFirstVisible) {
-//                isFirstVisible = false;
-//            } else {
-//                if (isFirstlog) {
-//                    isFirstlog = false;
-//                } else {
-//
-//                }
-//                Log.e("Pid", "from:" + getPreFragmentName() + "; to:" + list.get(i).getClass().getSimpleName());
-//                setPreFragmentName(list.get(i).getClass().getSimpleName());
-//            }
+
 
             return list == null ? null : list.get(i);
         }
 
-//        private void setPreFragmentName(String simpleName) {
-//            mPrefragmentName = simpleName;
-//        }
-//
-//        private String getPreFragmentName() {
-//            return mPrefragmentName;
-//        }
+
+        @Override
+        public int getCount() {
+            return list == null ? 0 : list.size();
+        }
+    }
+
+    private static class ViewStatePagerAdapter extends QxBaseFragmentStatePagerAdapter {
+        List<Fragment> list;
+
+        public ViewStatePagerAdapter(FragmentManager fm, List<Fragment> list) {
+            super(fm);
+            this.list = list;
+        }
+
+        @Override
+        public Fragment getItem(int i) {
+
+
+            return list == null ? null : list.get(i);
+        }
+
 
         @Override
         public int getCount() {
@@ -95,11 +98,7 @@ public class FragmentsActivity extends QxBaseActivity {
 
         @Override
         public void destroyItem(View container, int position, Object object) {
-//            Fragment frag=list.get(position);
-//            FragmentManager manager = frag.getFragmentManager();
-//            FragmentTransaction trans = manager.beginTransaction();
-//            trans.remove(frag);
-//            trans.commit();
+
             super.destroyItem(container, position, object);
         }
     }

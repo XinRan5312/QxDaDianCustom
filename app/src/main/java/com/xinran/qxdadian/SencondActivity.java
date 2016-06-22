@@ -19,7 +19,7 @@ public class SencondActivity extends QxBaseActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                qxStartActivity(new Intent(SencondActivity.this, ThirdActivity.class));
+                startActivity(new Intent(SencondActivity.this, ThirdActivity.class));
             }
         });
     }
